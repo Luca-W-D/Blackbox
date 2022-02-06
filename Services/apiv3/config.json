@@ -1,0 +1,119 @@
+{
+ "system": {
+  "default": "none",
+  "analyze_configs": {
+   "name": "-l eng --oem 1 --psm 11 name -c  preserve_interword_spaces=1",
+   "old": "-l eng --oem 1 --psm 11 -c  preserve_interword_spaces=1 -c tessedit_char_whitelist=' abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890[]/'",
+   "volume": "-l eng --oem 1 --psm 11 volume -c preserve_interword_spaces=0",
+   "records": "-l eng --oem 1 --psm 6 digits -c preserve_interword_spaces=0",
+   "records_was": "-l eng --oem 1 --psm 6 digits -c preserve_interword_spaces=0"
+  }
+ },
+ "processing": {
+  "citadel": {
+   "scales": {
+    "name": 16,
+    "volume": 24,
+    "volume_was": 5,
+    "record0": 2,
+    "record0_was": 2.5,
+    "record1": 2,
+    "record2": 2
+   },
+   "tolerances": {
+    "2": null,
+    "name": 154,
+    "name_was": 154,
+    "volume": 79,
+    "volume_was": 88,
+    "record_sale": 0,
+    "record_sale_was": 88,
+    "record_buy": 110,
+    "record_buy_was": 97,
+    "white": 115,
+    "white_was": 117,
+    "gray": 70,
+    "gray_was": 65,
+    "buy_record": null,
+    "sell_record": null,
+    "sale_record": null
+   },
+   "misc": {
+     "iterations": 1,
+     "iterations_was": 3
+   }
+  },
+  "harbor": {
+   "scales": {
+    "name": 16,
+    "volume": 24,
+    "volume_was": 3,
+    "record0": 2,
+    "record1": 2,
+    "record2": 2
+   },
+   "tolerances": {
+    "3": null,
+    "name": 154,
+    "name_was": 154,
+    "volume": 81,
+    "volume_was": 88,
+    "record_sale": 80,
+    "record_sale_was": 59,
+    "record_buy": 110,
+    "record_buy_was": 97,
+    "white": 126,
+    "white_was": 117,
+    "gray": 70,
+    "gray_was": 65,
+    "buy_record": null,
+    "sell_record": null,
+    "sale_record": null
+   },
+   "misc": {
+    "iterations": 1
+   }
+  },
+  "harborWas": {
+   "scales": {
+    "name": 15,
+    "volume": 3,
+    "record0": 2,
+    "record1": 2,
+    "record2": 2
+   },
+   "tolerances": {
+    "2": null,
+    "name": 150,
+    "volume": 85,
+    "record_sale": 69,
+    "record_buy": 98,
+    "white": 115,
+    "gray": 70
+   },
+   "misc": {
+    "iterations": 2
+   }
+  },
+  "default": {
+   "scales": {
+    "name": 15,
+    "volume": 24,
+    "record0": 2.528,
+    "record1": 2.5,
+    "record2": 2
+   },
+   "tolerances": {
+    "name": 130,
+    "volume": 80,
+    "record_sale": 45,
+    "record_buy": 40,
+    "white": 70,
+    "gray": 50
+   },
+   "misc": {
+    "iterations": 3
+   }
+  }
+ }
+}
