@@ -31,3 +31,10 @@ The discord bot serves two key functions: (1) the bot listens for community requ
 1. Price changes
 
 With this information, the program provides customers with push notifications and analysts with long term trends about the market. Over long periods of time, the program can even  track the approximate amount of items sold over a unit of time, updating users of periods of heightened and diminished trading.
+
+## Background services
+
+Considering some more tedious tasks are shared across modules, the program also hosts some services on local webservers to provide simple API's as an alternative to repetitive implementations
+
+1. `apiv3` is a standalone debug image intake API that intakes screenshots and handles the processing, injestion, and routing of incoming images. For low-powered machines that lack insufficient onboard capacity for OCR, this service can also provide a centralized processing node.
+2. `usernamev1` is a simple Flask-powered API that will request a ROBLOX user's username given user ID. Considering the in-game market oeprates entirely in user ID's, this functionality is often used to convert user ID's to their more memorable username equivalents. Although the code is relatively simple to implement, having a centralized service to interact with ROBLOX API's allows for easier setup of VPNs and proxys, as only one machine must be configured.
