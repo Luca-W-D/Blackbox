@@ -1,7 +1,7 @@
 # Blackbox
 **Alpha 2.0**
 
-*Frontend gallery now live at [l-uca.com!](https://l-uca.com/blackbox/)!*
+*Frontend gallery now live at [l-uca.com](https://l-uca.com/blackbox/)!*
 
 Blackbox is a framework for facilitating in-game data collection through a network of standalone game clients. By exposing specific API endpoints to the web, the project likely could be expanded to include geniune distributed computing with community participation instead of the current implementation that encourages multiple local computers contributing data; however, in general, the system is prohibitively difficult to run.
 
