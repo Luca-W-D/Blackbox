@@ -1,5 +1,7 @@
 # Blackbox
-**Alpha 1.0**
+**Alpha 2.0**
+
+*Frontend gallery now live at [l-uca.com!](https://l-uca.com/blackbox/)!*
 
 Blackbox is a framework for facilitating in-game data collection through a network of standalone game clients. By exposing specific API endpoints to the web, the project likely could be expanded to include geniune distributed computing with community participation instead of the current implementation that encourages multiple local computers contributing data; however, in general, the system is prohibitively difficult to run.
 
@@ -7,6 +9,7 @@ Blackbox is a framework for facilitating in-game data collection through a netwo
 A check mark indicates that the module is provided within this repository; other aspects of the project are still being prepared for publication and are marked with an "X."
  1. In-game bot scripts for collecting data ✅
  1. A dedicated API for persistent data storage ✅
+ 1. Frontend gallery with example interactions ✅
  1. A Discord.js powered Discord bot for community interaction ❌
 
 ## In-game bot scripts
@@ -37,4 +40,4 @@ With this information, the program provides customers with push notifications an
 Considering some more tedious tasks are shared across modules, the program also hosts some services on local webservers to provide simple API's as an alternative to repetitive implementations
 
 1. `apiv3` is a standalone debug image intake API that intakes screenshots and handles the processing, injestion, and routing of incoming images. For low-powered machines that lack insufficient onboard capacity for OCR, this service can also provide a centralized processing node.
-2. `usernamev1` is a simple Flask-powered API that will request a ROBLOX user's username given user ID. Considering the in-game market oeprates entirely in user ID's, this functionality is often used to convert user ID's to their more memorable username equivalents. Although the code is relatively simple to implement, having a centralized service to interact with ROBLOX API's allows for easier setup of VPNs and proxys, as only one machine must be configured.
+1. `usernamev1` is a simple Flask-powered API that will request a ROBLOX user's username given user ID. Considering the in-game market oeprates entirely in user ID's, this functionality is often used to convert user ID's to their more memorable username equivalents. Although the code is relatively simple to implement, having a centralized service to interact with ROBLOX API's allows for easier setup of VPNs and proxys, as only one machine must be configured.
