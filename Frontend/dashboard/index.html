@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="../blackbox/images/logo.png" type="image/x-icon">
+
+        <!-- Imports -->
+        <link href="./dashboard.css" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com/">
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+        <link href="./dashboard_files/css2" rel="stylesheet">
+
+        <script src="../blackbox/scripts/jquery.min.js"></script>
+        <script src="./scripts/circle.js"></script>
+        <script src="./scripts/dashboard.js"></script>
+
+        <title>Aurellia Industries</title>
+
+        <!-- Good references -->
+        <!-- If you're looking here, you're probably into this stuff. I used these -- would recommend! -->
+        <!-- Shadow examples: -->
+        <!-- https://getcssscan.com/css-box-shadow-examples -->
+        <!-- Color generator -->
+        <!-- https://coolors.co -->
+    </head>
+
+    <body>
+
+        <div class="siteContainer">
+            <div class="curtains" style="display: none;">
+                <div class="content">
+                    <h2>Warning!</h2>
+                </div>
+            </div>
+            <div class="rightSideSkeleton">
+
+            </div>
+            <div class="rightSide">
+                <div class="top">
+                    <div class="centeredWrapper">
+                        <img src="./images/pfp.png">
+                        <h2>Welcome, John Doe!</h2>
+                    </div>
+                </div>
+                <div class="mid">
+                    <div class="infoCard">
+                        <h2>Info Card</h2>
+                        <h3>BID: <span id="bid">1024</span></h3>
+                        <h3>ST: 8/4/2021</h3>
+                        <h3>TID: <span id="tid">AX84</span></h3>
+                    </div>
+                </div>
+                <div class="bot">
+                    <a href="#">
+                        <h4 id="logout">Logout</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="main">
+                <div class="personalAccount">
+                    <h2 class="title">Personal Account</h2>
+                    <div class="amount">
+                        <h1>102,104</h1>
+                        <h3>Credits</h3>
+                    </div>
+                    <div class="insured">
+                        <h1>25,000</h1>
+                        <h3>Credits Insured</h3>
+                    </div>
+                </div>
+                <div class="investment">
+                    <ol style="display: none;" class="metadata">
+                        <li class="amount">12,042</li>
+                        <li class="percent">0.24</li>
+                        <li class="days">3</li>
+                        <li class=""></li>
+                    </ol>
+                    <h2 class="title">Investment</h2>
+                    <div class="amount">
+                        <h1 span="amount"></h1>
+                        <h3>Credits</h3>
+                    </div>
+                    <div class="progress">
+                        <div class="displayCircle">
+                        </div>
+                        <div class="circleCenter">
+                            <div class="centerWrapper">
+                                <h2></h2>
+                                <h3></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+</html>

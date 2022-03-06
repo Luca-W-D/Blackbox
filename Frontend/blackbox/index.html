@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="Blackbox" property="og:title">
+        <meta content="Blackbox is a versatile tool for traders to get quick market updates." property="og:description">
+        <meta content="" property="og:url">
+        <meta content="./images/logo_b_w.png" property="og:image">
+        <meta content="#43B581" data-react-helmet="true" name="theme-color">
+
+        <!-- Imports -->
+        <link href="./blackbox.css" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com/">
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+        <link href="./style.css" rel="stylesheet">
+
+        <script src="./scripts/jquery.min.js"></script>
+        <script src="./scripts/blackbox.js"></script>
+
+        <title>Aurellia Industries</title>
+
+        <!-- Good references -->
+        <!-- If you're looking here, you're probably into this stuff. I used these -- would recommend! -->
+        <!-- Shadow examples: -->
+        <!-- https://getcssscan.com/css-box-shadow-examples -->
+        <!-- Color generator -->
+        <!-- https://coolors.co -->
+    </head>
+
+    <body>
+
+        <div class="metadata" style="display: none;">
+            <span id="purchase_token">{{token}}</span>
+            <span id="discord_id">{{ID}}</span>
+            <span id="monthly_cost">150,000</span>
+        </div>
+
+        <div class="siteContainer">
+            <div class="curtains" style="display: none;">
+                <div class="content">
+                    <h2>Warning!</h2>
+                </div>
+            </div>
+            <div class="purchaseResponse" style="display: none;">
+                <div class="content">
+                    <h2>Warning!</h2>
+                </div>
+            </div>
+            <div class="purchaseOverlay" style="display: none;">
+                <div id="exit">
+                    <p>X</p>
+                </div>
+                <div class="card">
+                    <h1>BlackBox</h1>
+                    <h2 class="price"><span class="monthly_cost"></span></h2>
+                    <h2 class="label">credits</h2>
+                    <div class="data">
+                        <p>Term</p>
+                        <p class="var">One month</p>
+                    </div>
+                    <div class="data">
+                        <p>Account</p>
+                        <p class="var">One Discord acct.</p>
+                    </div>
+                    <div class="data">
+                        <p>Payment System</p>
+                        <p class="var">AI Account ONLY</p>
+                    </div>
+                    <h3 class="terms">BlackBox renews monthly at <span class="monthly_cost"></span> credits. You will be
+                        asked before making another payment in the future. Read the terms and conditions <a
+                            href="#">here</a>.</h3>
+                    <h3 id="subscribe">SUBSCRIBE</h3>
+                </div>
+            </div>
+            <div class="nav">
+                <div class="logo">
+                    <img src="./images/logo_b_w.png">
+                </div>
+                <div class="buttons">
+                    <div class="button rent">
+                        <p>Rent</p>
+                    </div>
+                </div>
+            </div>
+            <div class="main">
+                <!-- Really cool css animation -- would recommend! -->
+                <!-- https://codepen.io/lbebber/pen/OPjxZL -->
+                <div class="blobContainer">
+                    <div class="blobs">
+                        <div class="blob"></div>
+                        <div class="blob"></div>
+                        <div class="blob"></div>
+                        <div class="blob"></div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                        <defs>
+                            <filter id="goo">
+                                <fegaussianblur in="SourceGraphic" stdDeviation="10" result="blur"></fegaussianblur>
+                                <fecolormatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                                    result="goo"></fecolormatrix>
+                                <feblend in="SourceGraphic" in2="goo"></feblend>
+                            </filter>
+                        </defs>
+                    </svg>
+                </div>
+
+                <div class="title">
+                    <h1>BlackBox</h1>
+                    <h2>By Aurellia Industries</h2>
+                </div>
+            </div>
+            <div class="additional">
+                <div class="about">
+                    <div class="left">
+                        <div class="imgContainer">
+                            <img src="./images/bot.png">
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h1>About The Bot</h1>
+                        <p>
+                            BlackBox is the ultimate tool of any Starscape trader. 3 in-game bots work around the clock
+                            to provide up-to-date market information for Citadel and Harbor. Users can query the most recent
+                            data, or request notifications about their market orders.
+                        </p>
+                    </div>
+                </div>
+                <div class="data">
+                    <div class="left">
+                        <h1>Data</h1>
+                        <p>BlackBox provides data at an unprecedented rate.
+                            Resources are refreshed in less than 5 minutes, while all other items for sale at Citadel are
+                            refreshed nearly every 90 minutes.
+                            Over 150 unique items are tracked every single hour, and 2,000 users total have been indexed by
+                            the bot.
+                        </p>
+                    </div>
+                    <div class="right">
+                        <div class="imgContainer">
+                            <img src="./images/server.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="notifications">
+                    <div class="left">
+                        <div class="imgContainer">
+                            <img src="./images/notification.png">
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h1>Notifications</h1>
+                        <p>
+                            BlackBox's Discord direct messages keep traders engaged with the game regardless of their
+                            availability.
+                            Find out when you're top of the list, when an item sells, or when you're order is completed --
+                            all while touching grass.
+                        </p>
+                    </div>
+                </div>
+                <div class="morality">
+                    <div class="left">
+                        <h1>Morality</h1>
+                        <p>BlackBox's in-game bots use Python scripts to interact with the game, manipulating the GUI to
+                            take screenshots and run optical character recognition.
+                            There is no part of the system that uses any form of code-injection, meaning the only advantage
+                            BlackBox has over other traders is time.
+                            No other system of its kind exists; hours have been spent to create a system that relies on
+                            vanilla game interactions instead of synapsing endpoints.
+                        </p>
+                    </div>
+                    <div class="right">
+                        <div class="imgContainer">
+                            <img src="./images/scale.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="recentTransactions">
+                    <div class="left">
+                        <div id="marketData">
+
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h1>Recent Activity</h1>
+                        <p>
+                            Live data, right from the game itself...
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="rent" id="rent">
+                <p>$</p>
+            </div>
+
+        </div>
+    </body>
+
+</html>
